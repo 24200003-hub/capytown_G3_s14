@@ -1,9 +1,8 @@
 Reto03 – Sistema de Navegación Autónoma con LiDAR para ROS 2
-//
-================================================== 
-                    DESCRIPCIÓN
+
+DESCRIPCIÓN
 ==================================================
-//
+
 Reto03 es un sistema de navegación autónoma desarrollado sobre ROS 2
 para un robot móvil diferencial equipado con un sensor LiDAR. El
 proyecto integra procesamiento de datos del sensor, una máquina de
@@ -15,8 +14,8 @@ La arquitectura modular facilita el mantenimiento del software, la
 reutilización de componentes y la incorporación de nuevas
 funcionalidades.
 
-================================================== 
-            CARACTERÍSTICAS PRINCIPALES 
+ 
+CARACTERÍSTICAS PRINCIPALES 
 ==================================================
 
 -   Navegación autónoma basada en LiDAR.
@@ -29,15 +28,15 @@ funcionalidades.
 -   Configuración centralizada mediante parámetros.
 -   Arquitectura modular basada en ROS 2.
 
-================================================== 
-                  ARQUITECTURA
+ 
+ARQUITECTURA
 ==================================================
 
 LiDAR (/scan) | v Procesamiento LiDAR | v Box Detector | v Behavior FSM
 | v /cmd_vel | v Robot | | v v /odom GUI | v Route Mapper
 
-================================================== 
-            ESTRUCTURA DEL PROYECTO
+ 
+ESTRUCTURA DEL PROYECTO
 ==================================================
 
 ejecutable/ ejecutable.py
@@ -46,8 +45,8 @@ src/ behavior_fsm/ box_detector/ route_mapper/ utils_scripts/
 
 README.md
 
-================================================== 
-                    MÓDULOS
+ 
+MÓDULOS
 ==================================================
 
 behavior_fsm Implementa la lógica principal de navegación mediante una
@@ -67,8 +66,8 @@ interfaz.
 ejecutable Punto de entrada del sistema e inicialización de la interfaz
 gráfica.
 
-================================================== 
-              FLUJO DE FUNCIONAMIENTO
+ 
+FLUJO DE FUNCIONAMIENTO
 ==================================================
 
 1.  El LiDAR publica datos en /scan.
@@ -79,8 +78,8 @@ gráfica.
 6.  La odometría actualiza el mapa.
 7.  La interfaz gráfica muestra el estado del sistema.
 
-================================================== 
-        FUNCIONALIDADES IMPLEMENTADAS 
+ 
+FUNCIONALIDADES IMPLEMENTADAS 
 ==================================================
 
 -   Seguimiento centrado entre paredes.
@@ -98,8 +97,8 @@ gráfica.
 -   Reportes automáticos al pausar.
 -   Lectura del estado de batería.
 
-================================================== 
-                  REQUISITOS
+ 
+REQUISITOS
 ==================================================
 
 -   ROS 2
@@ -107,14 +106,14 @@ gráfica.
 -   Sensor LiDAR compatible con /scan
 -   Odometría disponible en /odom
 
-================================================== 
-                  EJECUCIÓN
+ 
+EJECUCIÓN
 ==================================================
 
 python3 ejecutable/ejecutable.py
 
-================================================== 
-                  RESULTADOS
+ 
+RESULTADOS
 ==================================================
 
 El sistema permite recorrer un circuito de forma autónoma manteniéndose
@@ -122,8 +121,8 @@ centrado entre paredes, detectando esquinas y obstáculos, generando un
 mapa del recorrido y proporcionando información en tiempo real mediante
 una interfaz gráfica.
 
-================================================== 
-                MEJORAS FUTURAS
+ 
+MEJORAS FUTURAS
 ==================================================
 
 -   Integración con SLAM.
@@ -132,14 +131,14 @@ una interfaz gráfica.
 -   Optimización automática de parámetros.
 -   Exportación de mapas.
 
-================================================== 
-                    AUTOR
+ 
+AUTOR
 ==================================================
 
 Proyecto desarrollado para el Reto 03 de Robótica Móvil.
 
-================================================== 
-                  LICENCIA
+ 
+LICENCIA
 ==================================================
 
 Uso académico.
