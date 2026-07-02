@@ -1,9 +1,9 @@
 Reto03 – Sistema de Navegación Autónoma con LiDAR para ROS 2
-
+//
 ================================================== 
                     DESCRIPCIÓN
 ==================================================
-
+//
 Reto03 es un sistema de navegación autónoma desarrollado sobre ROS 2
 para un robot móvil diferencial equipado con un sensor LiDAR. El
 proyecto integra procesamiento de datos del sensor, una máquina de
