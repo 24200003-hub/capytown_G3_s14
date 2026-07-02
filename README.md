@@ -1,4 +1,5 @@
 Reto03 – Sistema de Navegación Autónoma con LiDAR para ROS 2
+==================================================
 
 DESCRIPCIÓN
 ==================================================
